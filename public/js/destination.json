@@ -1,0 +1,100 @@
+{
+
+    "destination" : [
+        {
+            "Pays":"France", 
+            "Ville" : "Paris",
+            "Prix" : 300,
+            "Pdej" : true,
+            "animaux" : true,
+            "images" : "../images/Pays/France/Paris",
+            "description" : "Paris, la ville de l'amour et de la lumière, évoque un mélange envoûtant de culture, d'histoire et de charme. Flânez le long de la Seine, contemplez l'icône de la Tour Eiffel qui scintille la nuit, dégustez des croissants frais dans de charmants cafés, explorez des musées renommés comme le Louvre, découvrez l'architecture élégante et les quartiers pittoresques, et imprégnez-vous de l'atmosphère romantique qui imprègne chaque coin de la ville. Paris vous invite à goûter à l'art de vivre à la française, à savourer une cuisine exceptionnelle, et à vous perdre dans l'élégance intemporelle de la Ville Lumière. Une visite à Paris est une expérience inoubliable qui éveillera tous vos sens et vous laissera rêver d'y retourner encore et encore.",
+            "maps":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d167997.47302647002!2d2.1822170504953884!3d48.858963302895475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis!5e0!3m2!1sfr!2sfr!4v1698309376857!5m2!1sfr!2sfr"
+        },
+        {
+            "Pays":"Allemagne", 
+            "Ville" : "Berlin",
+            "Prix" : 230,
+            "Pdej" : true,
+            "animaux" : false,
+            "images" : "../images/Pays/Allemagne/Berlin",
+            "description" : "Berlin, la métropole dynamique au cœur de l'Europe, offre une expérience captivante mêlant histoire, culture alternative, et une atmosphère électrisante. Explorez l'histoire tumultueuse de la ville en visitant le mur de Berlin, le Mémorial de l'Holocauste, ou le musée DDR, puis plongez dans la créativité effervescente de la scène artistique contemporaine. Vibrez au rythme de la musique électronique dans les clubs légendaires, dégustez une cuisine internationale exquise, flânez dans les quartiers éclectiques comme Kreuzberg et Friedrichshain, et découvrez la diversité qui fait le charme de Berlin. Une visite à Berlin est une aventure culturelle inoubliable qui vous laissera émerveillé par la vitalité de cette ville en constante évolution.",
+            "maps":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310852.72099428496!2d12.80093365056964!3d52.505622314014154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Allemagne!5e0!3m2!1sfr!2sfr!4v1698310044356!5m2!1sfr!2sfr"
+        },
+        {
+            "Pays":"Italie", 
+            "Ville" : "Rome",
+            "Prix" : 250,
+            "Pdej" : false,
+            "animaux" : true,
+            "images" : "../images/Pays/Italie/Rome",
+            "description" : "Rome, la ville éternelle, est un véritable voyage dans le temps, où l'histoire ancienne et la beauté intemporelle se rencontrent sous un ciel bleu azur. Parcourez les rues pavées de la Rome antique en visitant le Colisée, le Forum romain et le Panthéon, puis émerveillez-vous devant les trésors artistiques du Vatican, notamment la basilique Saint-Pierre et la chapelle Sixtine. Vous pourrez déguster des pâtes délicieuses et des gelatos exquis, tout en vous imprégnant de l'ambiance vivante des places historiques comme la Piazza Navona. Rome déborde d'histoire, de culture et de charme méditerranéen, offrant une expérience inoubliable pour les amateurs d'art, d'histoire et de cuisine italienne. Une visite à Rome, c'est un voyage à travers les siècles au cœur de la splendeur de l'Antiquité et du raffinement italien.",
+            "maps":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190028.35442524843!2d12.371187552467875!3d41.910208792309504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2sRome%2C%20Ville%20m%C3%A9tropolitaine%20de%20Rome%20Capitale%2C%20Italie!5e0!3m2!1sfr!2sfr!4v1698310374950!5m2!1sfr!2sfr"
+
+        },
+        {
+            "Pays":"USA", 
+            "Ville" : "New York",
+            "Prix" : 320,
+            "Pdej" : false,
+            "animaux" : false,
+            "images" : "../images/Pays/USA/New York",
+            "description" : "New York, la ville qui ne dort jamais, vous offre un kaléidoscope d'expériences inoubliables. Des gratte-ciel majestueux de Manhattan aux quartiers éclectiques de Brooklyn, cette métropole incroyable vous promet une aventure sans fin. Découvrez l'art au MET, assistez à une comédie musicale à Broadway, dégustez une cuisine du monde dans des rues pleines de vie, et profitez de la vue à couper le souffle depuis l'Empire State Building. Flânez dans Central Park, vibrez au rythme de la vie nocturne effervescente, et plongez dans la diversité culturelle qui fait la richesse de la ville. New York est une destination qui allie glamour, culture, et énergie, et qui vous laissera sans aucun doute émerveillé par son magnétisme unique. Une visite à New York, c'est une expérience inégalée, un rêve éveillé qui mérite d'être vécu au moins une fois dans une vie.",
+            "maps":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.0360977185!2d-74.30933341658171!3d40.69753995848721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20%C3%89tat%20de%20New%20York%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2sfr!4v1698310681789!5m2!1sfr!2sfr"
+
+        },
+        {
+            "Pays":"Japon", 
+            "Ville" : "Tokyo",
+            "Prix" : 320,
+            "Pdej" : true,
+            "animaux" : false,
+            "images" : "../images/Pays/Japon/Tokyo",
+            "description" : "Partez à Tokyo, la métropole futuriste où tradition et modernité fusionnent de manière saisissante. Explorez les ruelles animées de Shibuya, imprégnez-vous de l'énergie électrisante de Shinjuku, et découvrez l'harmonie entre le passé et le présent au temple Meiji. Plongez dans l'expérience sensorielle unique des quartiers de Akihabara et Harajuku, où la technologie de pointe et la mode avant-gardiste se côtoient. Savourez une cuisine exquise, des sushis délicats aux ramens fumants, dans les petits restaurants de quartier ou les établissements étoilés. De la vue panoramique du Tokyo Skytree à la quiétude des jardins impériaux, Tokyo vous offre une immersion inoubliable dans une culture fascinante, où chaque coin de rue réserve une nouvelle surprise. Une visite à Tokyo, c'est plonger dans un univers où la tradition rencontre l'innovation, et où chaque moment promet une aventure captivante.",
+            "maps":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1662975.6539616548!2d138.4503954936496!3d35.504294940427926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2sTokyo%2C%20Japon!5e0!3m2!1sfr!2sfr!4v1701933813580!5m2!1sfr!2sfr"
+
+        },
+        {
+            "Pays":"Indonesie", 
+            "Ville" : "Bali",
+            "Prix" : 420,
+            "Pdej" : true,
+            "animaux" : true,
+            "images" : "../images/Pays/Indonesie/Bali",
+            "description" : "Bali, l'île des Dieux, est une invitation à l'évasion dans un paradis tropical. Des plages de sable fin bordées de palmiers aux rizières en terrasses qui peignent le paysage de vert émeraude, chaque coin de Bali respire la beauté naturelle. Imprégnez-vous de la spiritualité en explorant les temples ancestraux, plongez dans les eaux cristallines pour découvrir un monde sous-marin fascinant, et laissez-vous envoûter par la chaleur de l'accueil balinais. Dégustez une cuisine délicieuse, explorez les marchés vivants et découvrez l'artisanat local. Que vous soyez à la recherche de détente dans des resorts luxueux, d'aventures sportives ou d'une connexion avec la culture balinaise unique, cette île magique offre une expérience enchanteresse où la tranquillité et l'énergie créent un équilibre parfait. Bali promet un voyage mémorable au cœur d'une nature luxuriante et d'une culture empreinte de spiritualité.",
+            "maps":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d505145.94732104026!2d114.7418752706807!3d-8.455278858563702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd22f7520fca7d3%3A0x2872b62cc456cd84!2sBali!5e0!3m2!1sfr!2sfr!4v1701935130949!5m2!1sfr!2sfr"
+
+        },
+        {
+            "Pays":"Emirats Arabes Unis",
+            "Ville":"Dubai",
+            "Prix":800,
+            "Pdej":true,
+            "animaux":false,
+            "images":"../images/Pays/Emirats Arabes Unis/Dubai",
+            "description": "Dubaï, la métropole futuriste nichée au cœur du désert, émerveille par son audace et son opulence. Des gratte-ciel scintillants qui percent le ciel aux îles artificielles extravagantes, chaque coin de cette ville incarne le luxe et l'innovation. Flânez dans les souks traditionnels, explorez le Burj Khalifa, la plus haute tour du monde, et vivez une expérience shopping inégalée dans les centres commerciaux ultramodernes. Les plages immaculées et les hôtels de renom offrent un confort exceptionnel, tandis que les déserts environnants vous invitent à des aventures uniques. Savourez une cuisine raffinée provenant des quatre coins du globe, et assistez à des spectacles grandioses qui reflètent la grandeur de la ville. Dubai, c'est l'alliance parfaite entre extravagance, modernité et traditions, offrant une escapade où le luxe rencontre l'exotisme du désert. Une visite à Dubai promet un voyage exceptionnel au cœur de l'extravagance et de l'innovation.",
+            "maps":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462560.68281993904!2d54.897823313520995!3d25.076280448422047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDuba%C3%AF%20-%20%C3%89mirats%20arabes%20unis!5e0!3m2!1sfr!2sfr!4v1702901546873!5m2!1sfr!2sfr"
+        },
+        {
+            "Pays":"Finlande",
+            "Ville":"Helsinki",
+            "Prix":190,
+            "Pdej":false,
+            "animaux":true,
+            "images":"../images/Pays/Finlande/Helsinki",
+            "description" :"Helsinki, la perle du nord, séduit par son mélange unique de modernité et de charme traditionnel. Explorez la capitale finlandaise avec son architecture design, ses espaces verts vastes et ses rives bordées de promenades. Découvrez la richesse culturelle des musées, tels que le Kiasma et le Musée national de Finlande, puis imprégnez-vous de l'atmosphère paisible des marchés locaux, comme celui de Vanha Kauppahalli. Vivez l'authenticité dans le quartier de Kallio, où l'esprit bohème rencontre une scène artistique florissante. Profitez des saunas finlandais traditionnels, plongez dans la vie nocturne animée, et dégustez des délices culinaires scandinaves. Helsinki, avec son équilibre parfait entre nature préservée et modernité élégante, vous offre une escapade nordique unique, où la sérénité et la créativité se rencontrent harmonieusement.",
+            "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254498.04822455315!2d24.68904960362284!3d60.11009634960262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bc796210691%3A0xcd4ebd843be2f763!2sHelsinki%2C%20Finlande!5e0!3m2!1sfr!2sfr!4v1702922456215!5m2!1sfr!2sfr"
+        },
+        {
+            "Pays":"Espagne",
+            "Ville":"Barcelone",
+            "Prix":240,
+            "Pdej":true,
+            "animaux":false,
+            "images":"../images/Pays/Espagne/Barcelone",
+            "description":"Barcelone, la cité méditerranéenne qui éblouit par sa créativité et son énergie débordante. Découvrez l'architecture emblématique d'Antoni Gaudí, dont la Sagrada Família et le Parc Güell, véritables joyaux artistiques. Flânez sur les Ramblas animées, perdez-vous dans le quartier gothique aux ruelles médiévales, et ressentez la chaleur du soleil sur les plages de sable doré. Imprégnez-vous de l'atmosphère artistique du quartier d'El Born, dégustez des tapas délicieuses dans les bars animés, et vivez la vie nocturne effervescente. Barcelone, c'est l'harmonie parfaite entre la culture catalane vibrante, la cuisine méditerranéenne exquise et la beauté incomparable de la mer. Cette ville captivante vous invite à explorer ses contrastes et à vous laisser emporter par son charme irrésistible. Une visite à Barcelone, c'est une expérience sensorielle où l'art, la culture et la joie de vivre se rencontrent avec élégance.",
+            "maps":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191560.8360676827!2d1.975376063123797!3d41.39280795296009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelone%2C%20Espagne!5e0!3m2!1sfr!2sfr!4v1702938511013!5m2!1sfr!2sfr"
+        }
+
+    ]
+}

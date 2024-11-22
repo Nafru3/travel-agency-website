@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/logo/logo_fiervol_2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/logo/logo_fiervol_2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
+
+    <title>Page de réservation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="../js/app.js"> </script>
+
+</head>
+
+<body onload="destinationEtSurvolement()">
+    <header></header>
+
+    <section class="groupe">
+        <h1 class="titre">Reservation</h1>
+        <div id="PhotoEtDescription">
+            <div id="touteslesphotos">
+                <li><img src="" alt="" id="Photo1"></li>
+                <li><img src="" alt="" id="Photo2"></li>
+                <li><img src="" alt="" id="Photo3"></li>
+                <li><img src="" alt="" id="Photo4"></li>
+                <li><img src="" alt="" id="Photo5"></li>
+                <li><img src="" alt="" id="Photo6"></li>
+            </div>
+            <div id="grandephoto">
+                <img src="" alt="" id="GrandePhoto">
+            </div>
+            <div id="description">
+                <h2 id="titredescription"></h2>
+                <p id="textedescription"></p>
+                <iframe id="cartedescription" src="" width="700" height="450"
+                    style="border:0; border-radius: 40px; padding: 20px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <section id="FormulaireReservation">
+        <form id="form"> 
+
+            <h2 class="titre">Formulaire de réservation</h2>
+            <div id="choix">
+                <div id="ChoixDate">
+                    <p>Rentrez la date de début de votre voyage</p>
+                    <input type="date" min="" max="" id="DateDebut" value="DateDebut" required> 
+                    <p>Rentrez la date de fin de votre voyage</p>
+                    <input type="date" min="" max="" id="DateFin" value="DateFin" required>
+                </div>
+                <div id="AutreChoix">
+                    <p>Rentrez le nombre d'adultes</p>
+                    <input type="number" min="0" id="NbrAdulte" value='0' required> 
+                    <p>Rentrez le nombre d'enfants</p>
+                    <input type="number" min="0" id="NbrEnfant" value='0' required> 
+                    <p id="PetitDejTxt">Petit déjeuner ?</p>
+                    <input type="checkbox" id="PetitDej" value="PetitDej">
+                    <p id="AnimauxTxt">Animaux ?</p>
+                    <input type="checkbox" id="Animaux" value="Animaux">
+                </div>
+                <div id="EnvoyerChoix">
+                    <p id="Prix">Prix du voyage : </p>
+                    <input class="boutonReservation" type=reset value="Rénitialiser">
+
+                </div>
+
+            </div>
+            <div id="boutonAjoutAuPanier">
+                <input class="boutonReservation" id="ajouterAuPanier" type="submit" value="Ajouter au panier" disabled>
+            </div>
+
+        </form>
+    </section>
+    <section id="Avis">
+        <h2 class="titre">Avis</h2>
+        <form id="AjoutAvis" action="">
+            <h3>Ajoutez votre Avis</h3>
+            <p>Rentrez votre Pseudo</p>
+            <input type="text" id="PseudoAvis" required>
+            <p>Rentrez votre avis</p>
+            <textarea id="TextAvis" rows="4" required></textarea>
+
+            <input type="submit" id="SubmitAvis" class="boutonReservation">
+        </form>
+        <div id="AvisPresent">
+            <template id="templateAvis">
+                <div id="DivAvisPresent">
+                    <p id="PseudoAvisPresent">{{Pseudo}} </p> 
+                    <div class="TraitAvis"></div>
+                    <p id="TextAvisPresent">{{Texte}}</p> 
+                </div>
+            </template>
+            <div id="DivPasAvis">
+                <p id="PasAvis"></p>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/logo/logo_fiervol_2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/logo/logo_fiervol_2.png" type="image/x-icon">
+
+    <title>Votre panier</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="../js/app.js"> </script>
+</head>
+
+<body onload="panier()">
+    <header></header>
+    <section class="groupe">
+        <h1 class="titre">Votre panier</h1>
+        <div id="PanierDiv">
+            <p id="PasPanier"></p>
+            <template id="TemplatePanier">
+                <div id="Destination">
+                    <div id="Destination_photo">
+                        <img src="../images/Pays/{{Pays}}/{{Ville}}1.webp" alt="Photo{{Ville}}">
+                    </div>
+                    <div id="Informations">
+                        <h2>{{Ville}}</h2>
+                        <div class="divBarreStyle"></div>
+                        <p>Date de départ : {{DateDebut}} </p>
+                        <p>Date d'arrivé : {{DateFin}} </p>
+                        <p>Nombre d'adultes : {{NbrAdulte}}</p>
+                        <p>Nombre d'enfants : {{NbrEnfant}}</p>
+                        <p id="PanierPdej">{{Pdej}}</p>
+                        <p id="PanierAnimaux">{{Animaux}}</p>
+                        <div class="prixPanier">
+                            <h4> {{Prix}} €</h4>
+                        </div>
+
+                    </div>
+            </template>
+        </div>
+        </div>
+        <div id="FinPanier">
+            <p id="PrixTotal">Prix total</p>
+            <a class="boutonReservation" href="confirmation.html">Confirmer la commande</a>
+            <a id="ViderPanier" class="boutonReservation" href="" onclick="videPanier()">Vider Panier</a>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/logo/logo_fiervol_2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/logo/logo_fiervol_2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
+
+    <title>Confirmer votre commande</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="../js/app.js" defer> </script>
+</head>
+
+<body onload="confirmation()">
+    <header onload=composant()></header>
+    <section class="groupe">
+        <h1 class="titre">Confirmation de commande</h1>
+        <div id="grilleConfirmation">
+            <form id="facturation">
+                <fieldset>
+                    <legend>Adresse de facturation</legend>
+                    <label for="nom">Nom : *</label><br>
+                    <input type="text" id="nom" name="nom" required><br>
+
+                    <label for="prenom">Prénom : *</label><br>
+                    <input type="text" id="prenom" name="prenom" required><br>
+
+                    <label for="adresse">Adresse : *</label><br>
+                    <input type="text" id="adresse" name="adresse" required><br>
+
+                    <label for="email">Adresse mail : *</label><br>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="telephone">Numéro de téléphone : </label><br>
+                    <input type="tel" id="telephone" name="telephone"><br>
+
+                    <label for="ville">Ville : *</label><br>
+                    <input type="text" id="ville" name="ville" required><br>
+
+                    <label for="codepostal">Code postal : *</label><br>
+                    <input type="text" id="codepostal" name="codepostal" required pattern="[0-9]{5}"><br>
+                    <input class="boutonReservation" type="submit" value="Valider votre commande">
+                </fieldset>
+            </form>
+            <div id="TousLesRappelDest">
+                <h1>Votre commande</h1>
+                <div id="DivDestRappel">
+                    <template id="TemplateDestinationRappel">
+                        <div id="RappelDestination">
+                            <img src="../images/Pays/{{Pays}}/{{Ville}}1.webp" alt="Photo{{Ville}}">
+                            <h2>{{Ville}}</h2>
+                            <h3> {{Prix}} €</h3>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer onload=composant()></footer>
+</body>
+
+</html>

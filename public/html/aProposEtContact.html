@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Propos et Contact</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/logo/logo_fiervol_2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/logo/logo_fiervol_2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script> <!--Permet de gérer l'envoie de mail-->
+    <script defer src="../js/app.js"> </script>
+    
+</head>
+
+<body onload="aPropos()">
+    <header onload="composant()"></header>
+
+    <section class="groupe">
+
+        <h1 class="titre">A Propos & Contact</h1>
+        <div id="infoSurLagence">
+            <h2>Information sur l'agence</h2>
+            <p>
+                Fiervol, votre porte d'entrée vers l'aventure et la détente ! Notre agence de voyage est dédiée à l'art
+                de créer des expériences inoubliables pour tous les voyageurs en quête d'évasion. Que vous rêviez de
+                plages de sable blanc, d'explorations urbaines excitantes ou d'échappées naturelles en plein cœur de
+                paysages époustouflants, Fiervol est là pour réaliser vos rêves. Notre équipe de passionnés de voyage
+                est déterminée à concevoir des itinéraires sur mesure, adaptés à vos préférences, pour que chaque voyage
+                soit une aventure unique. Laissez-nous vous guider vers des destinations fascinantes, des hébergements
+                de qualité et des activités passionnantes. Chez Fiervol, votre voyage commence bien avant que vous ne
+                preniez l'avion, car nous croyons que chaque étape de la planification doit être aussi excitante que le
+                voyage lui-même. Embarquez avec nous pour des vacances mémorables et des souvenirs durables.
+            </p>
+        </div>
+        <div class="grilleApropos">
+            <div class="InformationsContact">
+                <h2>Nos informations</h2>
+                <p>Les créateurs : Nathan & Raphaël</p>
+                <p>Adresse : Campus Lyontech, 3 Rue Victor Grignard, 69100 Villeurbanne</p>
+                <p>Numéro de téléphone : <a href="tel:+3141592653">+3141592653</a></p>
+                <p>Adresse mail : <a href="mailto:fiervol@cpe.com">fiervol@cpe.com</a></p>
+                <a class="boutonReservation"
+                    href="mailto:fiervol@cpe.com?subject=Demande%20de%20renseignements&body=Bonjour,%20je%20souhaiterais%20obtenir%20des%20renseignements%20sur">
+                    <h4>Cliquer ici pour nous envoyer un mail</h4>
+                </a>
+            </div>
+            <div>
+                <iframe width="600" height="400" style="border:0; border-radius: 40px; padding: 20px;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22266.40753923028!2d4.824682418351125!3d45.76515878715063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea977b847259%3A0x9efbb71d73134a76!2sCPE%20Lyon!5e0!3m2!1sfr!2sfr!4v1700661534353!5m2!1sfr!2sfr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div id="formulaireMail">
+            <h2>Nous contacter</h2>
+            <form>
+                <label for="email">Votre adresse e-mail :</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Votre message :</label><br>
+                <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+                <input class="boutonReservation" type="button" value="Envoyer" id="boutonemail" onclick="envoyerEmail()">
+                <input id="effacerFormulaire" class="boutonReservation" type="reset" value="Effacer">
+            </form>
+    </section>
+    </div>
+    <footer onload="composant()"></footer>
+</body>
+
+</html>

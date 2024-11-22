@@ -1,0 +1,105 @@
+<!--
+    Fait par Nathan et Raphaël
+    Créé le 12/10/2023
+    To do : (Si on avait eu plus de temps)
+    - Rajouter la possibilité de se connecter
+    - Faire apparaître mes photos de façon jolie quand on scroll 
+    - Rendre le site responsive
+ -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/logo/logo_fiervol_2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/logo/logo_fiervol_2.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="../js/app.js"> </script>
+    <script> clefAPI = "966c326e4a3d763ef82bd2e3bba664e8" </script> <!--C'est ici qu'il faut mettre sa clef-->
+</head>
+
+
+<body onload="templateindex()">
+    <header></header>
+    <div id="video">
+        <video src="../images/video/nature_-_44752 (720p).mp4" autoplay loop></video>
+        <h1>Bienvenue <br> réserve tes prochaines vacances !</h1>
+    </div>
+    <section id="FiltreGlobal">
+        <h2 class="titre">Filtres</h2>
+        <section id="Filtre">
+            <div>
+                <p>Prix minimum <input type="range" name="Prix minimum" onchange="recupererValeursFiltre('prixMin')"
+                        placeholder="Prix minimum" id="prixMin" min="0" max="1000" value="0"></p>
+                <span id="prixMinValue">0</span><br> <!-- Élément pour afficher la valeur -->
+            </div>
+            <div>
+                <p>Prix maximum <input type="range" name="Prix maximum" onchange="recupererValeursFiltre('prixMax')"
+                        placeholder="Prix maximum" id="prixMax" min="0" max="1000" value="1000"></p>
+                <span id="prixMaxValue">100</span><br> <!-- Élément pour afficher la valeur -->
+            </div>
+            <div class="FiltreCheckBox">
+                <p><input type="checkbox" name="Animaux acceptés" id="animaux"
+                        onchange="recupererValeursFiltre('animaux')">Animaux acceptés</p>
+                <p><input type="checkbox" name="Petit dejeuner compris" id="Pdej"
+                        onchange="recupererValeursFiltre('Pdej')">Petit dejeuner compris</p>
+            </div>
+        </section>
+
+
+        <!-- On a positionné ce script ici car c etait plus pratique et utile uniquement pour cette partie-->
+        <script> // Permet de changer les valeurs des input range
+            const prixMin = document.getElementById('prixMin');
+            const prixMinValue = document.getElementById('prixMinValue');
+            const prixMax = document.getElementById('prixMax');
+            const prixMaxValue = document.getElementById('prixMaxValue');
+            // Fonction pour mettre à jour la valeur affichée
+            function afficherValeurPrixMin() {
+                prixMinValue.textContent = prixMin.value;
+            }
+            function afficherValeurPrixMax() {
+                prixMaxValue.textContent = prixMax.value;
+            }
+            // Ajout d'événements pour mettre à jour les valeurs affichées
+            prixMin.addEventListener('input', afficherValeurPrixMin);
+            prixMax.addEventListener('input', afficherValeurPrixMax);
+            // Affichage initial des valeurs
+            afficherValeurPrixMin();
+            afficherValeurPrixMax();
+        </script>
+    </section>
+    </section>
+    <section id="LesDestinations">
+        <h1 class="titre">Les destinations</h1>
+        <div id="PhotoDestination">
+            <template id="TemplatePhotoDestination">
+                <div class="card-content">
+                    <div id="filtre{{Ville}}">
+                        <a href="../html/reservation.html?dest={{Pays}}"><img
+                                src="../images/Pays/{{Pays}}/{{Ville}}1.webp" alt=""></a>
+                        <div class="centre">
+                            <h3>{{Pays}}</h3>
+                        </div>
+                        <div class="bas">
+                            <div class="basbas">
+                                <h4>{{Prix}}€ </h4>
+                                <h5>{{Température}}°C</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+        <div id="DivPasDestination">
+            <p id="PasDestination"></p>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,894 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Robot";
+}
+
+@font-face {
+    font-family: "Robot";
+    src: url(../police/Roboto/Roboto-Medium.ttf)
+}
+
+.titre {
+    font-size: 33px;
+    margin-top: 15px;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    color: #333;
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.groupe {
+    padding-top: 100px;
+}
+
+input {
+    border-radius: 5px;
+    background-color: white;
+}
+
+p {
+    color: #333;
+}
+
+/* Classe pour rendre la barre de navigation non transparente */
+.solid-header {
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    box-shadow: 1px 8px 7px -1px rgba(0, 0, 0, 0.3);
+}
+
+/*------------------------------header------------------------------*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(231, 233, 234, 0);
+    /* Couleur de fond transparente */
+    transition: background-color 0.3s ease;
+    /* Transition en douceur */
+    z-index: 999;
+    /* Assure que la barre de navigation soit au-dessus des autres éléments */
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.75;
+    box-sizing: border-box;
+    /* pour que les éléments ne sortent pas de la fenêtre */
+}
+
+#Logo img {
+    filter: grayscale(10%);
+    width: 200px;
+    border-radius: 10px;
+}
+
+header a {
+    color: rgba(26, 25, 25, 0.863);
+    font-size: 25px;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+.nav-elements:hover p {
+    padding: 10px 20px;
+    margin: -10px -20px;
+    background-color: rgb(49, 46, 46);
+    color: white;
+    border-radius: 50px;
+    transition: 0.5s ease;
+}
+
+.nav-links ul {
+    display: flex;
+}
+
+.nav-links ul li {
+    margin: 0 20px;
+}
+
+
+/*------------------------------Index------------------------------ */
+#IMG {
+    display: grid;
+    place-items: center;
+}
+
+#IMG img {
+    width: 100%;
+    height: 110vh;
+    object-fit: cover;
+}
+
+#IMG h1 {
+    position: absolute;
+    font-size: 500%;
+    color: #f0f9ff;
+    text-align: center;
+    opacity: 0.80;
+}
+
+#video {
+    display: grid;
+    place-items: center;
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 40px 30px rgba(2, 48, 94, 0.19);
+
+}
+
+#video video {
+    width: 100%;
+    height: 110vh;
+    object-fit: cover;
+}
+
+#video h1 {
+    position: absolute;
+    font-size: 500%;
+    color: #f0f9ff;
+    text-align: center;
+    /*text-transform: uppercase;*/
+    opacity: 0.80;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Les filtres */
+#FiltreGlobal {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #ffffff59;
+    margin: 20px 300px 20px 300px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+#Filtre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px 30px 20px 30px;
+    font-size: 18px;
+}
+
+.FiltreCheckBox p {
+    padding-bottom: 10px;
+}
+.FiltreCheckBox input{
+    height: 25px;
+    width: 50px;
+}
+
+
+
+
+#LesDestinations {
+    padding-top: 20px;
+    padding-bottom: 50px;
+
+}
+
+/*La grille d'image*/
+#PhotoDestination {
+    max-width: 1500px;
+    width: 80%;
+    height: auto;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    justify-content: center;
+    grid-gap: 100px;
+}
+
+#PhotoDestination img {
+    width: 400px;
+    height: 550px;
+    border-radius: 20px;
+    margin: 20px;
+    object-fit: cover;
+    /* permet de ne pas étirer l'image*/
+    position: relative;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#PhotoDestination .card-content {
+    transform: scale(1);
+    transition: .5s ease-in-out;
+
+}
+
+#PhotoDestination .card-content:hover {
+    transform: scale(1.1);
+
+}
+
+.card-content {
+    position: relative;
+    justify-content: center;
+    display: grid;
+}
+
+.card-content h3 {
+    color: white;
+    font-weight: bold;
+}
+
+.centre {
+    z-index: 2;
+    position: absolute;
+    background-color: #515a62;
+    font-size: 20px;
+    padding: 16px;
+    top: -1%;
+    right: -15%;
+    border-radius: 20px;
+}
+
+.bas {
+    display: none;
+    position: absolute;
+    right: -5%;
+    height: 15%;
+    bottom: 4%;
+    left: 5%;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(90deg, #ffffffdc, rgba(216, 153, 153, 0.188));
+    opacity: 0.9;
+
+    border-radius: 0 0 20px 20px;
+    transform: scale(1);
+    transition: .5s ease-in-out;
+
+}
+
+.card-content :hover~.bas {
+    display: inline;
+    box-shadow: 0px 0px 100px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+.basbas {
+    padding-top: 10px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+
+}
+
+.basbas h4 {
+    font-size: 40px;
+
+
+}
+
+.basbas h5 {
+    padding-top: 1px;
+
+}
+
+#DivPasDestination {
+    text-align: center;
+
+}
+
+#PasDestination {
+    font-size: 18px;
+
+}
+
+
+/* ------------------------------Photo page reservation------------------------------*/
+
+#PhotoEtDescription {
+    display: grid;
+    grid-template-columns: 10% 45% 40%;
+    padding: 30px;
+}
+
+#touteslesphotos img {
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 6px;
+}
+
+
+#grandephoto img {
+    width: 700px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#choix {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 30px;
+    padding-top: 30px;
+    place-items: center;
+
+}
+
+#choix input {
+    background-color: white;
+    height: 30px;
+    border-radius: 20px;
+}
+
+#FormulaireReservation {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #ffffff59;
+    margin: 20px 200px 20px 200px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+#ChoixDate {
+    width: 40%;
+    float: left;
+    padding-bottom: 50px;
+}
+
+#ChoixDate p {
+    padding-top: 20px;
+}
+
+#AutreChoix {
+    width: 40%;
+    float: left;
+}
+
+#AutreChoix p {
+    padding-top: 10px;
+}
+
+#EnvoyerChoix {
+    float: right;
+    padding-bottom: 60px;
+}
+
+#EnvoyerChoix p {
+    margin-bottom: 60px;
+}
+
+#boutonAjoutAuPanier {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+:required {
+    background-color: #ffffff;
+}
+
+.boutonReservation {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-size: 18px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    max-width: 100%;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    width: auto;
+}
+
+#description h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+#textedescription {
+    text-align: justify;
+    padding: 0 20px;
+}
+
+/*Avis*/
+
+#Avis {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #ffffff59;
+    margin: 20px 200px 20px 200px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+#Avis input {
+    background-color: white;
+    border-radius: 15px;
+}
+
+#Avis textarea {
+    background-color: white;
+    resize: none;
+    width: 620px;
+}
+
+#AjoutAvis {
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#AjoutAvis h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#AjoutAvis input[type="text"] {
+    width: 101%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#SubmitAvis {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+input[type="number"] {
+    text-align: center;
+}
+
+input[type="date"] {
+    text-align: center;
+}
+
+#form,
+fieldset {
+    border: none;
+}
+
+#email {
+    width: 500px;
+    padding-left: 10px;
+    border-radius: 20px;
+    height: 30px;
+}
+
+#message {
+    padding: 8px;
+    margin-bottom: 10px;
+    resize: none;
+    /* Empêcher le redimensionnement */
+    border-radius: 20px;
+    width: 500px;
+    height: 200px;
+}
+
+#AvisPresent {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.TraitAvis {
+    margin-left: 1%;
+    width: 95%;
+    height: 1.2px;
+    background-color: #333333af;
+    margin-bottom: 10px;
+}
+
+#DivAvisPresent {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#DivAvisPresent p {
+    padding-bottom: 5px;
+}
+
+#PseudoAvisPresent {
+    font-weight: bold;
+    color: #333;
+    font-size: 20px;
+}
+
+#DivAvisPresent p {
+    margin: 0;
+}
+
+#DivPasAvis {
+    text-align: center;
+}
+
+#PasAvis {
+    margin: 0;
+}
+
+/*------------------------------Panier------------------------------*/
+#PanierDiv {
+    text-align: center;
+}
+
+#PasPanier {
+    font-size: 18px;
+}
+
+#Destination {
+    display: grid;
+    grid-template-columns: 0.35fr 1fr;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #ffffff59;
+    margin: 20px 150px 20px 100px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+#Destination_photo {
+    display: flex;
+    justify-content: center;
+}
+
+#Destination_photo img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+#Informations h2 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.divBarreStyle {
+    width: 86%;
+    margin: 0px 0px 0px 80px;
+    height: 2.4px;
+    background-color: #333;
+    margin-bottom: 35px;
+}
+
+#Informations p {
+    margin: 0 0px 15px 80px;
+}
+
+.prixPanier {
+    font-size: 45px;
+    margin-top: 15px;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    color: #333;
+    margin-left: 70%;
+    margin-right: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prixPanier h4 {
+    margin: 0 0px 0px 0px;
+}
+
+#FinPanier {
+    margin: 50px 0px 0 100px;
+}
+
+#FinPanier p {
+    margin: 0px 0px 30px 0px;
+    font-size: 40px;
+}
+
+#ViderPanier {
+    margin-left: 1200px;
+}
+
+/* ------------------------------Confiramtion commande------------------------------ */
+#grilleConfirmation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 35px 0 35px 0;
+}
+
+#facturation {
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    color: #333;
+    margin-left: 20%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+    height: 605px;
+}
+
+#facturation legend {
+    font-size: 25px;
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#facturation input {
+    width: 600px;
+    height: 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+#TousLesRappelDest h1 {
+    color: #333;
+    font-size: 25px;
+}
+
+#RappelDestination {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    color: #333;
+    margin-left: 0%;
+    margin-right: 10%;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+#RappelDestination img {
+    width: 350px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+#RappelDestination h2 {
+    padding-left: 150px;
+    font-size: 30px;
+}
+
+#RappelDestination h3 {
+    padding-left: 150px;
+    font-size: 20spx;
+}
+
+#MoyenDePaiment {
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    color: #333;
+    margin-left: 10%;
+    margin-right: 20%;
+    display: flex;
+    align-items: center;
+}
+
+#MoyenDePaiment legend {
+    font-size: 30px;
+}
+
+/* ------------------------------A propos et contact------------------------------ */
+#infoSurLagence {
+    margin: 40px 170px 50px 175px;
+    text-align: justify;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #ffffff59;
+    margin: 20px 300px 20px 300px;
+    padding-left: 50px ;
+    padding-right:50px ;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+#infoSurLagence h2 {
+    font-size: 25px;
+    margin-top: 15px;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    color: #333;
+    text-align: center;
+    margin-left: 33%;
+    margin-right: 33%;
+}
+
+
+.grilleApropos {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    justify-content: center;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #ffffff59;
+    margin: 20px 300px 20px 300px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+.grilleApropos h2 {
+    font-size: 25px;
+    margin-top: 15px;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    color: #333;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 38%;
+}
+
+.InformationsContact {
+    margin-left: 40px;
+}
+
+.InformationsContact p {
+    padding: 0px 0px 18px 0;
+}
+
+#formulaireMail {
+    justify-content: center;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #ffffff59;
+    margin: 40px 16% 20px 16%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+#formulaireMail h2 {
+    font-size: 25px;
+    margin-top: 15px;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    color: #333;
+    text-align: center;
+    margin-left: 32%;
+    margin-right: 28%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#formulaireMail form {
+    margin-left: 33%;
+    margin-right: 0%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#effacerFormulaire{
+    margin-left: 270px;
+}
+
+/* ------------------------------footer------------------------------ */
+footer {
+    position: relative;
+    margin-bottom: 0;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    height: auto;
+    background-color: rgba(216, 212, 212, 0.384);
+    justify-content: center;
+}
+
+footer .footerContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+footer .footerContainer h2 {
+    position: relative;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+footer .TraitFooter {
+    margin-left: 30%;
+    margin-bottom: 10px;
+    width: 40%;
+    height: 1px;
+    background-color: #333;
+}
+
+footer .footerContainer p {
+    color: #555;
+    margin: 20px;
+}
+
+.icons {
+    margin-top: 20px;
+}
+
+footer .icons {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+footer .icons a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0 0 0;
+    transform: scale(1);
+    transition: .25s ease-in-out;
+    border-radius: 20px;
+    display: bold;
+}
+
+footer .icons a:hover {
+    transform: scale(1.5);
+    background-color: #aca997;
+}
+
+footer img {
+    width: 140px;
+}
+
+footer a {
+    margin: 15px;
+}
+
+footer ul {
+    margin-bottom: 20px;
+}
+
+.DestinationsFavorites a {
+    font-weight: 500;
+}
+
+footer li {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.icon {
+    width: 20px;
+}
+
+footer .LogoFooterImage {
+    width: 80%;
+}
+
+html { /*Permet de changer la barre sur le côté en bleu (marche sur Firefox)*/
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #06447470 #ffffff00;
+}
